@@ -21,7 +21,7 @@ export const MuiCheckbox = () => {
     if (index === -1) {
       setSkills([...skills, event.target.value]);
     } else {
-      setSkills(skills.filter((skill) => skill != event.target.value));
+      setSkills(skills.filter((skill) => skill !== event.target.value));
     }
   };
 
